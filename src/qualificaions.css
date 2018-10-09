@@ -1,0 +1,126 @@
+#evocard {
+	margin-top: 0px;
+}
+
+.qualsectionheader {
+	font-family: 'Arial Regular', 'Arial';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.pvlabel {
+	font-size: 36px;
+    color: #6AD1E3;
+    vertical-align: middle;
+}
+
+.pvvalue {
+	color: #6AD1E3;
+}
+
+.PAElevel {
+	color: #87518d;
+}
+
+#GVBar {
+	border: 1px solid #f6bf25;
+    height: 20px;
+    float: left;
+    width: 85%;
+    margin-top: 5px;
+    background: url(/semantic/images/GVbar.png) repeat-y;
+    background-size: 100% auto;
+	cursor:pointer;
+}
+
+#GVCircle {
+	border: 1px solid #F6bf25;
+    height: 30px;
+    border-radius: 15px;
+    width: 30px;
+    float: left;
+    margin-left: -5px;
+    background-color: white;
+}
+
+#GVValue {
+	float: left;
+	color: #9CDBD9;
+	clear: both;
+}
+
+.gvlabel {
+	font-family: 'Arial Regular', 'Arial';
+    font-weight: 650;
+    font-style: normal;
+    font-size: 24px;
+    color: #9CDBD9;
+    text-align: left;
+    line-height: normal;
+}
+/* start Wf125160 */
+.pvlabel {
+	font-family: 'Arial Regular', 'Arial';
+    font-weight: 650;
+    font-style: normal;
+    font-size: 24px;
+    color: #6AD1E3;
+    text-align: left;
+    line-height: normal;
+}
+/* end Wf125160 */
+#OVBar {
+	border: 1px solid #cccccc;
+    height: 20px;
+    float: left;
+    width: 85%;
+    margin-top: 5px;
+    background: url(/semantic/images/OVbar.png) repeat-y;
+    background-size: 90% auto;
+	cursor:pointer;
+}
+
+#OVCircle {
+	border: 1px solid #cccccc;
+    height: 30px;
+    border-radius: 15px;
+    width: 30px;
+    float: left;
+    margin-left: -5px;
+    background-color: white;
+}
+
+#OVValue {
+	float: left;
+	color: #A1D884;
+	clear: both;
+}
+
+.ovlabel {
+	font-family: 'Arial Regular', 'Arial';
+    font-weight: 650;
+    font-style: normal;
+    font-size: 24px;
+    color: #A1D884;
+    text-align: left;
+    line-height: normal;
+}
+.masterlegsheader {
+	cursor:pointer;	
+}
+.masterlegsheader:hover {
+    font-size: 130%;
+	
+}
+.enrollmentsheader {
+	cursor:pointer;	
+}
+.enrollmentsheader:hover {
+	font-size: 130%;
+}
+
+#Module_Qualifications > #evocard{
+	width:100%;
+	margin-bottom:0px;
+}

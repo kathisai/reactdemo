@@ -1,0 +1,861 @@
+
+<html>
+
+<head><script src="/src/qualificaions.js"></script>
+    <link rel="stylesheet" type="text/css" href="/src/qualificaions.css">
+    </head>
+
+    <body><div id="evocard" class="ui card">
+        <div id="cardheader" class="content">
+        <span class="bold">Qualifications - </span>Period 03/2014
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="qualsectionheader">Rank</span></div>
+        <div class="thirteen wide column">
+        <select id="RankSelect3" class="ui fluid dropdown qualrankselect" onchange="ChangeQualification.call(this,this.options[this.selectedIndex].value,'3','Home');">
+        <option value="1" selected="">Sapphire</option>
+        <option value="2">Crystal</option>
+        <option value="3">Quartz</option>
+        <option value="4">Coral</option>
+        <option value="5">Opal</option>
+        <option value="6">Topaz</option>
+        <option value="7">Lapis</option>
+        <option value="8">Ruby</option>
+        <option value="9">Pearl</option>
+        <option value="10">Emerald</option>
+        <option value="11">Diamond</option>
+        <option value="12">Double Diamond</option>
+        <option value="13">Crown Diamond</option>
+        </select>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="qualsectionheader">Period</span></div>
+        <div class="thirteen wide column">
+        <select class="ui fluid dropdown qualperiodselect" onchange="ChangeQualificationPeriod.call(this,'index.cfm?Fuseaction=evo_Modules.Qualifications','3','Module_Qualifications',this.options[this.selectedIndex].value,'Home');">
+        <option value="201403" selected="">03/2014</option>
+        <option value="201402">02/2014</option>
+        <option value="201401">01/2014</option>
+        </select>
+        </div>
+        </div>
+        </div>
+        <div id="qualification1_3" style="display:block;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/50</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/0.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="0" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/0.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        </div>
+        <div id="qualification2_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/50</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/500.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="0" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/0.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=2&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        </div>
+        <div id="qualification3_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/50</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/1,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="0" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/0.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=3&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        </div>
+        <div id="qualification4_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/50</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/2,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="0" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/0.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=4&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        </div>
+        <div id="qualification5_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/50</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/3,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="0" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/0.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=5&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        </div>
+        <div id="qualification6_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/50</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/4,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="0" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/0.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=6&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        </div>
+        <div id="qualification7_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/100</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/5,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="0" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/0.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=7&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        </div>
+        <div id="qualification8_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/100</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/5,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="10000" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/10,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=8&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        <div class="content">
+        <span class="masterlegsheader qualsectionheader" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK19&amp;currentfieldrank=8&amp;DetailTitle=Master%20Leg%20Report&amp;DIVID=LegsDiv','LegsDiv');">Master Legs</span><br><br>
+        <div class="ui center aligned container"><div class="ui three column grid"><div class="row">
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        </div></div>
+        </div><br>
+        </div>
+        </div>
+        <div id="qualification9_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/100</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/5,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="12500" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/12,500.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=9&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        <div class="content">
+        <span class="masterlegsheader qualsectionheader" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK19&amp;currentfieldrank=9&amp;DetailTitle=Master%20Leg%20Report&amp;DIVID=LegsDiv','LegsDiv');">Master Legs</span><br><br>
+        <div class="ui center aligned container"><div class="ui three column grid"><div class="row">
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        </div></div>
+        </div><br>
+        </div>
+        </div>
+        <div id="qualification10_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/100</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/5,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="15000" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/15,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=10&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        <div class="content">
+        <span class="masterlegsheader qualsectionheader" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK19&amp;currentfieldrank=10&amp;DetailTitle=Master%20Leg%20Report&amp;DIVID=LegsDiv','LegsDiv');">Master Legs</span><br><br>
+        <div class="ui center aligned container"><div class="ui three column grid"><div class="row">
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        </div></div>
+        </div><br>
+        </div>
+        </div>
+        <div id="qualification11_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/100</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/5,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="20000" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/20,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=11&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        <div class="content">
+        <span class="masterlegsheader qualsectionheader" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK19&amp;currentfieldrank=11&amp;DetailTitle=Master%20Leg%20Report&amp;DIVID=LegsDiv','LegsDiv');">Master Legs</span><br><br>
+        <div class="ui center aligned container"><div class="ui three column grid"><div class="row">
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        </div></div>
+        </div><br>
+        </div>
+        </div>
+        <div id="qualification12_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/100</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/5,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="20000" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/20,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=12&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        <div class="content">
+        <span class="masterlegsheader qualsectionheader" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK19&amp;currentfieldrank=12&amp;DetailTitle=Master%20Leg%20Report&amp;DIVID=LegsDiv','LegsDiv');">Master Legs</span><br><br>
+        <div class="ui center aligned container"><div class="ui three column grid"><div class="row">
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        </div></div>
+        </div><br>
+        </div>
+        </div>
+        <div id="qualification13_3" style="display:none;">
+        <div class="content">
+        <div class="ui center aligned container">
+        <span class="pvlabel">PV</span>
+        <div class="ui image">
+        <i class="ui customcolor2 huge thumbs outline up icon"></i>
+        </div>
+        <br>
+        <span class="pvvalue">5812/100</span>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="gvlabel">GV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui yellow progress" data-total="48941" data-value="48941">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL2&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=GVDIV','GVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="GVValue">48,941.90/5,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="ui two column doubling stackable grid container">
+        <div class="three wide column"><span class="ovlabel">OV</span></div>
+        <div class="thirteen wide column">
+        <div class="ui olive progress" data-total="20000" data-value="0">
+        <div class="bar" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;currentfieldlist=VOL3&amp;PageView=GV_View&amp;TargetID=3&amp;DIVID=OVDIV&amp;DetailTitle=OV%20Report','OVDiv');">
+        <div class="progress">
+        </div>
+        </div>
+        </div>
+        <div id="OVValue">0.00/20,000.00</div>
+        </div>
+        </div>
+        </div>
+        <div class="content">
+        <br>
+        </div>
+        <script>$('.progress').progress();</script>
+        <div class="content">
+        <span class="enrollmentsheader qualsectionheader qualpersonalenrollments" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK1&amp;currentfieldrank=13&amp;DetailTitle=Personal%20Active%20Enrollments%20Report&amp;DIVID=EnrollmentsDiv','EnrollmentsDiv');">Personal Active Enrollments</span><br><br>
+        <div class="ui center aligned container">
+        <div class="ui image">
+        <i class="ui big male icon"></i>
+        <i class="ui big male icon"></i>
+        </div>
+        </div><br>
+        </div>
+        <div class="content">
+        <span class="masterlegsheader qualsectionheader" onclick="ShowModal('index.cfm?Fuseaction=evo_Modules.QualificationDetail&amp;pvdate=201403&amp;PageView=Detail_View&amp;TargetID=3&amp;currentfieldlist=WRK19&amp;currentfieldrank=13&amp;DetailTitle=Master%20Leg%20Report&amp;DIVID=LegsDiv','LegsDiv');">Master Legs</span><br><br>
+        <div class="ui center aligned container"><div class="ui three column grid"><div class="row">
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        <div class="column">
+        <img class="ui image" src="/res/MasterLegsOff.png">
+        </div>
+        </div></div>
+        </div><br>
+        </div>
+        </div>
+        </div>
+        </body>
+
+        </html>

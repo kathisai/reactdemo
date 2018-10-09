@@ -18,10 +18,10 @@ export default class Qualifications extends Component {
     </div>
     
     <div className="card-body">
-    <div className="ui two column doubling stackable grid container">
-    <div className="three wide column"><span className="qualsectionheader card-text">Rank</span></div>
-    <div className="thirteen wide column">
-    <select id="RankSelect3" className="ui fluid dropdown qualrankselect" onchange="ChangeQualification.call(this,this.options[this.selectedIndex].value,'3','Home');">
+    <div id="row_rank" className="row">
+    <div id="column_rank_title" className="column"><span className="qualsectionheader card-text">Rank</span></div>
+    <div id="column_rank_content" className="column" >
+    <select id="RankSelect3" className="form-control" onchange="ChangeQualification.call(this,this.options[this.selectedIndex].value,'3','Home');">
     <option value="1" selected="">Sapphire</option>
     <option value="2">Crystal</option>
     <option value="3">Quartz</option>
@@ -41,17 +41,16 @@ export default class Qualifications extends Component {
     </div>
 
 
-<div class="card-body">
-    <div className="ui two column doubling stackable grid container">
+<div class="card-body row">
     <div className="three wide column"><span className="qualsectionheader">Period</span></div>
     <div className="thirteen wide column">
-    <select className="ui fluid dropdown qualperiodselect" onChange="ChangeQualificationPeriod.call(this,'index.cfm?Fuseaction=evo_Modules.Qualifications','3','Module_Qualifications',this.options[this.selectedIndex].value,'Home');">
+    <select className="form-control" onChange="ChangeQualificationPeriod.call(this,'index.cfm?Fuseaction=evo_Modules.Qualifications','3','Module_Qualifications',this.options[this.selectedIndex].value,'Home');">
     <option value="201403" selected="">03/2014</option>
     <option value="201402">02/2014</option>
     <option value="201401">01/2014</option>
     </select>
     </div>
-    </div>
+   
     </div>
 
 

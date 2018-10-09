@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Clock from './Clock'
+import ToggleButton from './ToggleButton';
+import LoginButton from './LoginButton';
+import Conditional from './Conditional';
+import Lists from './Lists';
 
 // class App extends Component {
 //   render() {
@@ -25,9 +29,14 @@ function App(props){
     <div>
       <Welcome name="React JS, Lets Rock" />
       <Clock />
-    <h1>
-      Its {new Date().toLocaleTimeString()} . Now
-    </h1>
+      <ToggleButton />
+      <hr/>
+      <LoginButton />
+      <hr />
+      <Conditional />
+      <hr />
+      <Lists />
+      <hr />
     <MyFooter name="Prathap" email="sai.990880@gmail.com"/> 
     </div>
   );

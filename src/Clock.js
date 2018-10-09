@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 class Clock extends Component {
     constructor(props){
         super(props)
-        this.state = {date: new Date()};
+        this.state = {date: new Date(), name: 'latjo'};
     }
     
     componentDidMount(){

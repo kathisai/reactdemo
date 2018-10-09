@@ -6,11 +6,14 @@ import * as serviceWorker from './serviceWorker';
 
 
 
-function tick() {
-    ReactDOM.render(<App />, document.getElementById('root'));
-}
+// function tick() {
+//     ReactDOM.render(<App />, document.getElementById('root'));
+// }
 
-setInterval(tick,1000);
+ReactDOM.render(<App />, document.getElementById('root'));
+
+// tick();
+// setInterval(tick,1000);
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA

@@ -6,6 +6,7 @@ import ToggleButton from './ToggleButton';
 import LoginButton from './LoginButton';
 import Conditional from './Conditional';
 import Lists from './Lists';
+import Qualifications from './Qualifications';
 
 // class App extends Component {
 //   render() {
@@ -27,7 +28,7 @@ import Lists from './Lists';
 function App(props){
   return (
     <div>
-      <Welcome name="React JS, Lets Rock" />
+      {/* <Welcome name="React JS, Lets Rock" />
       <Clock />
       <ToggleButton />
       <hr/>
@@ -37,7 +38,8 @@ function App(props){
       <hr />
       <Lists />
       <hr />
-    <MyFooter name="Prathap" email="sai.990880@gmail.com"/> 
+    <MyFooter name="Prathap" email="sai.990880@gmail.com"/>  */}
+    <Qualifications />
     </div>
   );
 };
